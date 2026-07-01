@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Victor Recinos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">VR<span>.</span></div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="section hero">
+      <div class="hero-content">
+        <h1>Hola, soy <span>Victor Recinos</span></h1>
+        <p>
+          Desarrollador web Junior con pasión por crear soluciones innovadoras,
+          resolver problemas con enfoque técnico y colaborar con mi equipo.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn primary">Ver proyectos</a>
+          <a href="#contacto" class="btn secondary">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Stack principal</h2>
+        <ul>
+          <li>JavaScript (ES6+)</li>
+          <li>HTML5 & CSS3</li>
+          <li>Responsive Design</li>
+          <li>LocalStorage / APIs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section about">
+      <div class="section-title">
+        <h2>Sobre mí</h2>
+        <p>Quién soy y cómo trabajo.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy un desarrollador web Junior estudiando Ingeniería en Sistemas.
+            Me gusta construir interfaces limpias, funcionales y enfocadas en la experiencia del usuario.
+          </p>
+          <p>
+            Disfruto trabajar en equipo, aportar ideas y transformar problemas en soluciones
+            técnicas claras y mantenibles.
+          </p>
+        </div>
+        <div class="about-info">
+          <ul>
+            <li><strong>Ubicación:</strong> Guatemala</li>
+            <li><strong>Rol:</strong> Desarrollador Web Junior</li>
+            <li><strong>Enfoque:</strong> Front-end y lógica de aplicaciones</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section projects">
+      <div class="section-title">
+        <h2>Proyectos</h2>
+        <p>Algunos trabajos que representan mi forma de construir soluciones.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Sistema de Citas para Academia de Manejo</h3>
+          <p>
+            Aplicación para gestionar citas, alumnos y horarios usando
+            almacenamiento persistente y lógica modular.
+          </p>
+          <span class="tag">Python</span>
+          <span class="tag">Persistencia</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Landing Page Gastronómica</h3>
+          <p>
+            Página de aterrizaje para un negocio de comida, enfocada en
+            pedidos rápidos y diseño atractivo.
+          </p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Portafolio Interactivo</h3>
+          <p>
+            Este mismo portafolio, con menú hamburguesa, scroll suave y diseño
+            brutal pero profesional.
+          </p>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+      <div class="section-title">
+        <h2>Contacto</h2>
+        <p>¿Te interesa trabajar conmigo? Hablemos.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <ul>
+            <li><strong>Email:</strong> recinosvictor2004@gmail.com</li>
+            <li><strong>GitHub:</strong> recinosvictor2004-ship-ito</li>
+            <li><strong>LinkedIn:</strong> </li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Correo" required />
+          <textarea placeholder="Mensaje" rows="4" required></textarea>
+          <button type="submit" class="btn primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Victor Recinos — Portafolio profesional.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
